@@ -2,7 +2,8 @@ package com.munib.dash.controllers;
 
 import org.springframework.web.bind.annotation.*;
 
-@RestController(value="/home")
+@RestController
+@RequestMapping(value="/home")
 public class HomeController {
 	
 	@GetMapping(value="/hello")

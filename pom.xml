@@ -37,17 +37,7 @@
 							
 			</plugin>
 			
-			<plugin>
-			<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-					<finalName>pitadashservice</finalName>
-				</configuration>	
-			</plugin>
+			
 		</plugins>
 	</build>
 

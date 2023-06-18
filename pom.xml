@@ -34,7 +34,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+							
+			</plugin>
+			
+			<plugin>
+			<configuration>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -42,7 +46,7 @@
 						</exclude>
 					</excludes>
 					<finalName>pitadashservice</finalName>
-				</configuration>				
+				</configuration>	
 			</plugin>
 		</plugins>
 	</build>

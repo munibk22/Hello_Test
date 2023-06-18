@@ -38,10 +38,27 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>				
-				</configuration>
+				<artifactId>spring-boot-maven-plugin</artifactId>				
 			</plugin>
+			<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.munib.dash.HelloTestApplication</mainClass>
+            </manifest>
+          </archive>
+          <excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+					<finalName>pitadashservice</finalName>
+        </configuration>
+      </plugin>
 		</plugins>
 					<finalName>pitadashservice</finalName>
 	</build>
